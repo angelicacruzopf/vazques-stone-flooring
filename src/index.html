@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./tailwind.css" rel="stylesheet" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vasquez Stone Flooring</title>
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif">
+    <header>
+      <!-- FIXED NAV -->
+
+      <nav
+        class="hidden md:flex flex-row justify-between items-center text-sm bg-white py-2 px-4 fixed z-50 w-full gap-4 shadow-md"
+      >
+        <div class="h-10">
+          <img
+            src="./img/logos/logo-full.png"
+            alt="Logo"
+            class="object-fit w-full h-full"
+          />
+        </div>
+        <div class="flex flex-row grow justify-center max-w-[1000px]">
+          <ul
+            class="flex flex-row grow justify-center gap-2 md:gap-6 font-normal text-center text-lighterGray cursor-pointer items-center lg:text-base"
+          >
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#hero">Home</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#products">Our work</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#about">About Us</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#departamentos">What we do</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#contacto">Contact</a>
+            </li>
+            <li
+              class="hover:underline hover:text-secondary transition-all ease-in"
+            >
+              <a href="#sucursales">Location</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-ful min-w-32">
+          <button
+            type="button"
+            class="bg-secondary text-white py-2 px-4 font-bold text-lg flex gap-2 items-center sm:text-xs lg:text-base rounded-lg w-full hover:bg-none hover:border-2 hover:border-white transition-all ease-in"
+          >
+            <div>
+              <img
+                src="./img/icons/call-wt.png"
+                alt="Ícono llamada"
+                class="hidden md:inline-block"
+              />
+            </div>
+            <span class="text-nowrap">(939) 252 4501</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE NAV -->
+
+      <nav
+        class="md:hidden fixed flex-row justify-between items-center text-sm bg-white z-50 w-full shadow-md top-0 flex py-3 px-4"
+      >
+        <div class="flex flex-row items-center justify-between text-sm w-full">
+          <div class="h-10">
+            <img
+              src="./img/logos/logo-full.png"
+              class="object-contain h-full w-full rounded-lg"
+              alt="Logo ícono"
+            />
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              class="rounded-full font-bold text-lg items-center sm:text-xs lg:text-base"
+            >
+              <div
+                class="text-lg text-darkGray cursor-pointer hover:border-2 hover:border-primary transition-all ease-in py-1 px-4"
+              >
+                <img
+                  src="./img/icons/call-bl.png"
+                  alt="Ícono llamada"
+                  class="object-cover"
+                />
+              </div>
+            </button>
+            <div
+              class="text-lg text-darkGray cursor-pointer hover:border-2 transition-all ease-in hovver:border-primary h-8 p-1"
+            >
+              <img
+                src="./img/icons/bars-bl.png"
+                alt="Menú mobile"
+                class="object-cover w-full h-full"
+              />
+
+              <div
+                id="menu"
+                class="flex flex-col grow justify-center absolute top-[64px] right-[0] shadow-lg"
+              >
+                <ul
+                  class="navbar flex flex-col grow justify-evenly font-medium text-darkGray text-center divide-y z-20 bg-white"
+                >
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#hero">Home</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#products">Our work</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#about">About Us</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#departamentos">What we do</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#contacto">Contact</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#sucursales">Location</a>
+                  </li>
+                  <li
+                    class="flex py-3 px-6 justify-center items-center self-stretch hover:bg-primary transition-all ease-in hover:bg-opacity-50"
+                  >
+                    <a href="#horarios">Hours</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- BANNER PROMOCIONAL -->
+
+      <section>
+        <div
+          class="w-full bg-mediumGray text-white text-sm sm-banner flex justify-between items-center pt-8 pb-4 md:pt-4 px-4 absolute top-[55px] lg:top-[50px] z-30"
+        >
+          <div>
+            <img src="./img/icons/arrow-left-wt.png" alt="Arrow left" />
+          </div>
+          <p class="text-center">Up to <strong>70% OFF</strong></p>
+          <div>
+            <img src="./img/icons/arrow-right-wt.png" alt="Arrow right" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section
+        id="hero"
+        class="text-center flex flex-col md:flex-row items-center justify-center h-[800px] md:h-[600px] mt-[60px] md:mt-0 md:top-[20px] bg-hero-mobile md:bg-hero-desktop bg-center bg-cover bg-no-repeat"
+      >
+        <div
+          class="flex flex-col justify-center items-center w-[80%] md:w-1/2 h-[70%] md:pt-24 md:h-full"
+        >
+          <div
+            class="bg-white flex items-center p-6 flex-col gap-4 w-10/12 md:w-2/3"
+          >
+            <div class="w-full md:w-2/3 max-w-48">
+              <img
+                src="./img/season-text.png"
+                alt="Season text"
+                class="w-full md:hidden"
+              />
+              <img
+                src="./img/season-text.png"
+                alt="Season text"
+                class="hidden md:inline-block w-full"
+              />
+            </div>
+            <div class="w-full flex flex-col items-center">
+              <div class="mb-6 w-full">
+                <h1 class="font-bold text-xl leading-10">
+                  Up to <br />
+                  <strong class="text-[64px] text-[#D62744]">70%</strong>
+                  <br />
+                  OFF
+                </h1>
+              </div>
+              <div class="flex flex-row items-center justify-center w-full">
+                <button
+                  type="submit"
+                  class="bg-primary text-white py-2 px-4 font-semibold text-lg flex gap-2 items-center justify-center w-full hover:bg-black transition-all ease-in max-w-60"
+                >
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTOS -->
+
+      <section id="products" class="flex items-center py-16 flex-col">
+        <div class="w-[90%] md:w-full flex flex-col items-center gap-4">
+          <h2 class="font-bold text-center text-2xl md:text-5xl">
+            Some of our work
+          </h2>
+
+          <div class="w-full md:hidden">
+            <!-- CARDS -->
+
+            <div id="slideshow-container">
+              <!-- CARD 01 -->
+
+              <div class="w-full min-w-[280px] flex flex-col">
+                <div class="h-96 shadow-xl">
+                  <img
+                    src="./img/products/AA01s.png"
+                    alt="Garden Landscape"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+
+              <!-- CARD 02 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div class="w-full md:w-[30%] min-w-[280px] flex flex-col">
+                  <div class="h-96 shadow-xl">
+                    <img
+                      src="./img/products/AA02s.png"
+                      alt="Garden Landscape"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 03 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div class="w-full md:w-[30%] min-w-[280px] flex flex-col">
+                  <div class="h-96 shadow-xl">
+                    <img
+                      src="./img/products/AA03s.png"
+                      alt="Irrigation system"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 04 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div class="w-full md:w-[30%] min-w-[280px] flex flex-col">
+                  <div class="h-96 shadow-xl">
+                    <img
+                      src="./img/products/AA04s.png"
+                      alt="Landscape Lightning"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 05 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div class="w-full md:w-[30%] min-w-[280px] flex flex-col">
+                  <div class="h-96 shadow-xl">
+                    <img
+                      src="./img/products/AA05s.png"
+                      alt="Desert landscape"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 06 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div class="w-full md:w-[30%] min-w-[280px] flex flex-col">
+                  <div class="h-96 shadow-xl">
+                    <img
+                      src="./img/products/AA06s.png"
+                      alt="Pond waterscape"
+                      class="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOTS -->
+
+            <div class="flex justify-center mb-8">
+              <span
+                class="h-4 w-4 my-0 mx-1 bg-grayWhite rounded-full transition ease-in hover:bg-neutralGray"
+              ></span>
+              <span
+                class="h-4 w-4 my-0 mx-1 bg-grayWhite rounded-full transition ease-in hover:bg-neutralGray"
+              ></span>
+              <span
+                class="h-4 w-4 my-0 mx-1 bg-grayWhite rounded-full transition ease-in hover:bg-neutralGray"
+              ></span>
+              <span
+                class="h-4 w-4 my-0 mx-1 bg-grayWhite rounded-full transition ease-in hover:bg-neutralGray"
+              ></span>
+              <span
+                class="h-4 w-4 my-0 mx-1 bg-grayWhite rounded-full transition ease-in hover:bg-neutralGray"
+              ></span>
+              <span
+                class="h-4 w-4 my-0 mx-1 bg-grayWhite rounded-full transition ease-in hover:bg-neutralGray"
+              ></span>
+            </div>
+          </div>
+
+          <!-- PARA ESCRITORIO -->
+
+          <div
+            class="hidden md:flex flex-row gap-4 sm:flex-row sm:flex-wrap items-center md:items-start py-16 w-full justify-center"
+          >
+            <!-- CARD 01 -->
+
+            <div class="w-[30%] min-w-[280px] flex flex-col">
+              <div class="h-96 shadow-xl">
+                <img
+                  src="./img/products/AA01s.png"
+                  alt=">Garden Landscape"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <!-- CARD 02 -->
+
+            <div class="w-[30%] min-w-[280px] flex flex-col">
+              <div class="h-96 shadow-xl">
+                <img
+                  src="./img/products/AA02s.png"
+                  alt="Garden Landscape"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <!-- CARD 03 -->
+
+            <div class="w-[30%] min-w-[280px] flex flex-col">
+              <div class="h-96 shadow-xl">
+                <img
+                  src="./img/products/AA03s.png"
+                  alt="Irrigation system"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <!-- CARD 04 -->
+
+            <div class="w-[30%] min-w-[280px] flex flex-col">
+              <div class="h-96 shadow-xl">
+                <img
+                  src="./img/products/AA04s.png"
+                  alt="Landscape Lightning"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <!-- CARD 05 -->
+
+            <div class="w-[30%] min-w-[280px] flex flex-col">
+              <div class="h-96 shadow-xl">
+                <img
+                  src="./img/products/AA05s.png"
+                  alt="Desert landscape"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <!-- CARD 06 -->
+
+            <div class="w-[30%] min-w-[280px] flex flex-col">
+              <div class="h-96 shadow-xl">
+                <img
+                  src="./img/products/AA06s.png"
+                  alt="Pond waterscape"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="text-white font-semibold text-lg flex gap-2 items-center transition-all ease-in bg-black px-4 py-2 w-full md:w-1/3 justify-center md:min-w-80 cursor-pointer"
+          >
+            <p>Download PDF catalog</p>
+            <div>
+              <img src="./img/icons/frame.png" alt="Download icon" />
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+
+      <section id="about" class="bg-third">
+        <div class="flex flex-col items-center py-16">
+          <div
+            class="flex flex-col items-center w-[90%] md:w-1/2 max-w-[800px]"
+          >
+            <div class="flex flex-col justify-center items-center gap-8">
+              <div class="h-20">
+                <img
+                  src="./img/logos/logo-full.png"
+                  alt="Logotipo Nitza's Jewerly"
+                  class="object-contain h-full w-full"
+                />
+              </div>
+
+              <div class="flex flex-col gap-4">
+                <div
+                  class="text-darkGray flex flex-col text-center font-semibold gap-4"
+                >
+                  <p>
+                    Elevate your space with the timeless allure of natural
+                    stone.
+                  </p>
+                  <p>
+                    Our expert craftsmanship transforms floors into
+                    masterpieces.
+                  </p>
+                  <p>
+                    Explore the beauty, durability, and unmatched elegance of
+                    Vasquez Stone Flooring.
+                  </p>
+                  <p>Discover the foundation of exceptional living.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPARTAMENTOS -->
+
+      <section
+        id="departamentos"
+        class="flex justify-center bg-darkGray text-white"
+      >
+        <div
+          class="flex flex-col items-center w-[90%] md:w-9/12 pt-16 pb-24 max-w-[1000px]"
+        >
+          <h2 class="font-bold text-center mb-10 text-2xl md:text-5xl">
+            What we do
+          </h2>
+          <div
+            class="flex flex-wrap justify-evenly sm:justify-evenly md:justify-around gap-x-2 md:gap-x-16 gap-y-20 h-full w-full"
+          >
+            <!-- CARD 01 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD01s.png"
+                  alt="Floors"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Floors</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 02 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD02s.png"
+                  alt="Kitchens"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Kitchens</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 03 -->
+
+            <div
+              class="flex flex-col justify-center items-center text-center mb-4"
+            >
+              <div class="rounded-full w-32 h-32 mb-4">
+                <img
+                  src="img/departamentos/DD03s.png"
+                  alt="Bathrooms"
+                  class="object-cover h-full w-full"
+                />
+                <div>
+                  <h4 class="font-semibold mt-4">Bathrooms</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+
+      <section class="flex items-center py-16 flex-col">
+        <div
+          class="w-[90%] md:w-full flex flex-col items-center max-w-[1000px]"
+        >
+          <h2 class="font-bold text-center text-2xl md:text-5xl">
+            Some of our reviews
+          </h2>
+          <div class="md:hidden">
+            <div class="testimonial-container py-16">
+              <!-- CARD 01 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 justify-center"
+              >
+                <div class="w-full flex flex-col items-center gap-4">
+                  <div class="flex flex-col items-center text-center gap-4">
+                    <p class="text-gray-500">
+                      <strong>"</strong>Jose and his crew do a fantastic job.
+                      Very careful and precise. I am "over the moon" with their
+                      finished work. Our Master bath looks like a
+                      showcase.<strong>"</strong>
+                    </p>
+                    <h4 class="font-semibold">John Mongoven</h4>
+                    <div>
+                      <img src="img/icons/google.png" alt="Google logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 02 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div
+                  class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4"
+                >
+                  <div class="flex flex-col items-center text-center gap-4">
+                    <p class="text-gray-500">
+                      <strong>"</strong>Great experience! I hired them for my
+                      investment property and the kitchen floor was I level by
+                      almost an inch. They worked hard to level and my tiles
+                      look amazing! Loved the work so much, I hired them for my
+                      house. Professional and exceptional.<strong>"</strong>
+                    </p>
+                    <h4 class="font-semibold">Stephanie Vasile</h4>
+                    <div>
+                      <img src="img/icons/google.png" alt="Google logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 03 -->
+
+              <div
+                class="flex flex-row gap-4 sm:flex-wrap items-centers py-8 w-full justify-center"
+              >
+                <div
+                  class="w-full md:w-[30%] min-w-[280px] flex flex-col items-center gap-4"
+                >
+                  <div class="flex flex-col items-center text-center gap-4">
+                    <p class="text-gray-500">
+                      <strong>"</strong>What a great job! My flooring,
+                      backsplash and bath is perfect. Attention to detail is
+                      amazing. During the job our house was always left clean.
+                      Thank you soooo much!!<strong>"</strong>
+                    </p>
+                    <h4 class="font-semibold">Rodney Malpass</h4>
+                    <div>
+                      <img src="img/icons/google.png" alt="Google logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOTS -->
+
+            <div class="flex gap-2 justify-center mb-8">
+              <span
+                class="h-4 w-4 bg-lightGray rounded-full inline-block hover:bg-mediumGray transition-all ease-in"
+              ></span>
+              <span
+                class="h-4 w-4 bg-lightGray rounded-full inline-block hover:bg-mediumGray transition-all ease-in"
+              ></span>
+              <span
+                class="h-4 w-4 bg-lightGray rounded-full inline-block hover:bg-mediumGray transition-all ease-in"
+              ></span>
+            </div>
+          </div>
+
+          <!-- PARA ESCRITORIO -->
+
+          <div
+            class="hidden md:flex flex-row gap-8 sm:flex-row sm:flex-wrap items-center md:items-start py-16 w-full justify-evenly"
+          >
+            <!-- CARD 01 -->
+
+            <div class="w-[30%] min-w-[280px]">
+              <div class="flex flex-col items-center gap-4">
+                <div class="h-32 w-32 shadow-xl rounded-full">
+                  <img
+                    src="./img/review/RR01s.png"
+                    alt="John Mongoven"
+                    class="object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Jose and his crew do a fantastic job. Very
+                    careful and precise. I am "over the moon" with their
+                    finished work. Our Master bath looks like a showcase.<strong
+                      >"</strong
+                    >
+                  </p>
+                  <h4 class="font-semibold">John Mongoven</h4>
+                  <div>
+                    <img src="img/icons/google.png" alt="Google logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 02 -->
+
+            <div
+              class="flex flex-row gap-4 sm:flex-wrap items-center justify-center w-[30%] min-w-[280px]"
+            >
+              <div class="flex flex-col items-center gap-4 w-full">
+                <div class="h-32 w-32 shadow-xl rounded-full">
+                  <img
+                    src="./img/review/RR02s.png"
+                    alt="Stephanie Vasile"
+                    class="object-coverl"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>Great experience! I hired them for my
+                    investment property and the kitchen floor was I level by
+                    almost an inch. They worked hard to level and my tiles look
+                    amazing! Loved the work so much, I hired them for my house.
+                    Professional and exceptional.<strong>"</strong>
+                  </p>
+                  <h4 class="font-semibold">Stephanie Vasile</h4>
+                  <div>
+                    <img src="img/icons/google.png" alt="Google logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 03 -->
+
+            <div style="width: 30%" class="w-[30%] min-w-[280px]">
+              <div class="flex flex-col items-center gap-4">
+                <div class="h-32 w-32 shadow-xl rounded-full">
+                  <img
+                    src="./img/review/RR03s.png"
+                    alt="Rodney Malpass"
+                    class="object-cover"
+                  />
+                </div>
+
+                <div class="flex flex-col items-center text-center gap-4">
+                  <p class="text-gray-500">
+                    <strong>"</strong>What a great job! My flooring, backsplash
+                    and bath is perfect. Attention to detail is amazing. During
+                    the job our house was always left clean. Thank you soooo
+                    much!!<strong>"</strong>
+                  </p>
+                  <h4 class="font-semibold">Rodney Malpass</h4>
+                  <div>
+                    <img src="img/icons/google.png" alt="Google logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+
+      <section id="contacto" class="flex justify-center bg-primary">
+        <div
+          class="flex flex-col md:flex-row py-20 w-[90%] lg:w-9/12 gap-8 text-white max-w-[1000px]"
+        >
+          <div class="flex flex-col gap-8 md:w-1/2">
+            <h2
+              class="font-bold md:mb-10 text-2xl text-center md:text-4xl md:text-left"
+            >
+              Need more info?
+              <br />
+              Send us a message!
+            </h2>
+            <div class="font-semibold md:inline-block" hidden>
+              <div class="flex items-center mb-7">
+                <img src="./img/icons/call-line-w.png" alt="Icon call" />
+                <div class="flex flex-col gap-y-2 ms-4">
+                  <p>(713) 861-6520</p>
+                </div>
+              </div>
+              <div class="flex items-center mb-7">
+                <img src="./img/icons/clock-w.png" alt="Icon clock" />
+                <div class="flex flex-col ms-4 gap-y-4">
+                  <p><strong>Hours:</strong></p>
+                  <p>Monday - Friday: 8:00am - 8:00pm</p>
+                  <p>Saturday: 8:00am - 5:00pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:w-1/2 gap-4 w-full">
+            <!-- FORMULARIO -->
+
+            <form class="flex flex-col gap-4 h-full text-white">
+              <div class="flex flex-col md:flex-row gap-4 w-full">
+                <div class="relative md:w-1/2">
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    required
+                    maxlength="32"
+                    pattern="[A-Za-z\s]{1,32}"
+                    title="Nombres"
+                    class="w-full h-12 bg-white p-2 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                    placeholder="Name(s)"
+                  />
+                  <span class="inline-block">
+                    This field cannot be empty, e.g. John
+                  </span>
+                </div>
+                <div class="relative md:w-1/2">
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    maxlength="32"
+                    pattern="[A-Za-z]{1,32}"
+                    required
+                    class="w-full h-12 bg-white p-4 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                    placeholder="Last name(s)"
+                  />
+                  <span class="inline-block"
+                    >This field cannot be empty, e.g. Doe</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-span-2 relative">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="w-full h-12 bg-white p-4 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  required
+                  placeholder="Email"
+                />
+                <span class="inline-block">
+                  This field cannot be empty, e.g. correo@example.com
+                </span>
+              </div>
+
+              <div class="col-span-2 relative">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="w-full h-12 bg-white p-4 text-mediumGray invalid:border-pink-500 invalid:text-pink-600"
+                  pattern="^\+[1-9]{1}[0-9]{3,14}$"
+                  required
+                  placeholder="Phone number"
+                />
+                <span class="inline-block">
+                  This field cannot be empty, e.g. +27 123 4567
+                </span>
+              </div>
+              <div class="col-span-2 row-span-6 h-full relative">
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  class="w-full h-32 bg-white p-4 resize-none invalid:border-pink-500 text-mediumGray invalid:text-pink-600"
+                  placeholder="Write a message"
+                ></textarea>
+              </div>
+            </form>
+
+            <div
+              class="mt-4 opacity-50 transition-opacity hover:opacity-100 hover:ease-in"
+            >
+              <button
+                type="submit"
+                class="bg-darkGray md:w-1/2 text-white py-2 px-4 font-semibold text-lg flex gap-2 items-center justify-center w-full hover:bg-black transition-all ease-in rounded-lg"
+              >
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUCURSALES -->
+
+      <section id="sucursales" class="flex justify-center">
+        <div
+          class="w-full md:w-9/12 flex flex-col md:flex-row justify-center py-16 gap-10"
+        >
+          <h2
+            class="font-bold text-2xl text-center md:text-left md:text-5xl py-4 md:hidden"
+          >
+            Doubts? Visit us!
+          </h2>
+
+          <div class="md:w-1/2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449774.1501703125!2d-83.28961692514896!3d28.272245026997993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c28d6fb739897f%3A0xa9d884eaf23dc857!2sVasquez%20Stone%20Flooring%20CORP!5e0!3m2!1sen!2sus!4v1705612319269!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            class="md:w-1/2 text-darkGray flex-col justify-center items-center gap-12 hidden md:flex"
+          >
+            <h2 class="font-bold text-2xl text-center md:text-left md:text-5xl">
+              Doubts? Visit us!
+            </h2>
+            <p class="text-2xl">431 E Harrison St, Tarpon Springs FL, 34689</p>
+          </div>
+          <div
+            class="w-full text-lg py-4 px-4 md:hidden font-semibold text-neutralGray"
+          >
+            <p class="font-bold text-darkGray leading-8 break-all uppercase">
+              431 E Harrison St, Tarpon Springs FL, 34689
+            </p>
+            <p>Phone number: +1 (727) 485-3728</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HORARIOS -->
+
+      <section id="horarios" class="bg-third">
+        <div
+          class="flex flex-col items-center ms-4 text-neutralGray gap-y-4 md:hidden text-lg font-semibold max-w-[1000px] py-16"
+        >
+          <p class="font-bold text-black text-2xl">Hours:</p>
+          <p>Monday - Friday: 8:00am - 8:00pm.</p>
+          <p>Saturday: 8:00am - 5:00pm</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <section class="flex justify-center bg-mediumGray">
+        <div
+          class="flex flex-col items-center w-[90%] md:w-9/12 py-16 text-white max-w-[1000px]"
+        >
+          <h2 class="font-bold mb-10 text-2xl md:text-4xl">FAQs</h2>
+          <div class="divide-y w-full">
+            <!-- QUESTION 1 -->
+
+            <div>
+              <div class="accordion flex justify-between py-6">
+                <div class="font-semibold">Where are you located?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                Our main offices are located on 431 E Harrison St, Tarpon
+                Springs, FL, 34689
+              </div>
+            </div>
+
+            <!-- QUESTION 2 -->
+
+            <div>
+              <div class="accordion flex justify-between py-6">
+                <div class="font-semibold">
+                  How can I get in touch with you?
+                </div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </div>
+            </div>
+
+            <!-- QUESTION 3 -->
+
+            <div>
+              <div class="accordion flex justify-between py-6">
+                <div class="font-semibold">What is the warranty?</div>
+                <button class="text-white text-2xl">+</button>
+              </div>
+              <div class="pb-4 text-white divide-y">
+                “Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam
+                delectus nihil. Aut enim doloremque et ipsam.”
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section
+        class="bg-darkGray flex flex-col justify-center items-center py-16"
+      >
+        <div class="w-[90%] max-w-[1000px]">
+          <div
+            class="w-full flex flex-col md:flex-row gap-8 md:items-center justify-evenly pb-16"
+          >
+            <div class="flex flex-col items-center gap-6 md:max-w-[255px]">
+              <div
+                class="justify-self-center self-center flex justify-center items-center h-16"
+              >
+                <img
+                  src="img/logos/logo-full-wt.png"
+                  alt="Ícono del logo"
+                  class="object-ccover h-full"
+                />
+              </div>
+              <div
+                class="text-white opacity-50 text-5xl flex flex-row justify-evenly mb-6 sm:mb-0 gap-8 w-2/3"
+              >
+                <img src="./img/icons/facebook-w.png" alt="Icon facebook" />
+                <img src="./img/icons/whatsapp-w.png" alt="Icon whatsapp" />
+                <img src="./img/icons/instagram-w.png" alt="Icon instagram" />
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-y-4 mb-4 sm:mb-0 text-white"
+            >
+              <h3 class="font-bold">Site Map</h3>
+              <ul class="grid gap-y-4 underline opacity-60">
+                <li class="sm:hidden"><a href="#hero">Home</a></li>
+                <li><a href="#products">Our work</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#departamentos">What we do</a></li>
+              </ul>
+            </div>
+            <div class="text-white opacity-60 flex flex-col justify-center">
+              <ul class="grid gap-y-4 underline">
+                <li><a href="#contacto">Contact</a></li>
+                <li><a href="#sucursales">Locations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="opacity-50 w-[90%]" />
+        <span
+          class="sm:text-center text-white opacity-60 pt-8 mb-8 w-[90%] md:w-3/5"
+          >2024, Vasquez Stone Flooring, All rights reserved.</span
+        >
+      </section>
+    </footer>
+  </body>
+</html>
